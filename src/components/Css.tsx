@@ -39,6 +39,38 @@ export default function CssModal() {
           `}
             </code>
           </pre>
+
+
+          <h2 className="font-bold">Styled components</h2>
+          <pre className="p-2 bg-slate-700 rounded">
+            <code >
+              {`
+      
+             const Title = styled.h1'
+               font-size: 1.5em;
+               text-align: center;
+               color: palevioletred;
+             ';
+             
+        
+             const Wrapper = styled.section
+               padding: 4em;
+               background: papayawhip;
+             ';
+             
+          
+             render(
+               <Wrapper>
+                 <Title>
+                   Hello World!
+                 </Title>
+               </Wrapper>
+             );
+          `}
+            </code>
+          </pre>
+
+
         </div>
 
       </div>
