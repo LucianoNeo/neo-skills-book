@@ -21,11 +21,11 @@ export default function GitModal() {
                     <span className="font-bold">Comitar</span>
                     <code className="p-2 bg-slate-700 rounded">git commit -m "minha mensagem de commit"</code>
 
-                    <span className="font-bold">Setar repo remoto</span>
+                    <span className="font-bold">Setar repo remoto e enviar pra GH</span>
                     <code className="p-2 bg-slate-700 rounded">
                         git remote -v <br />
                         git remote add origin url<br />
-                        git remote set-url origin url<br />
+                        git push -u origin master<br />
                     </code>
 
                     <span className="font-bold">Alterar Branch</span>
@@ -42,14 +42,17 @@ export default function GitModal() {
                     <span className="font-bold">Copiar branch</span>
                     <code className="p-2 bg-slate-700 rounded"> git branch -c main dev</code>
 
-                    <span className="font-bold">Enviar nova branch para o github</span>
-                    <code className="p-2 bg-slate-700 rounded">git push --set-upstream origin dev</code>
-
                     <span className="font-bold">Aplicar uma PR</span>
                     <code className="p-2 bg-slate-700 rounded">
                         git fetch origin pull/1214/head:1080<br />
                         git checkout 1080
                     </code>
+
+                    <span className="font-bold">Fazer MERGE</span>
+                    <code className="p-2 bg-slate-700 rounded">
+                        git merge nome_da_branch_a_incluir
+                    </code>
+
 
                 </div>
 
